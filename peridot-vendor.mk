@@ -1000,6 +1000,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.hardware.trustedui-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.trustedui-aidl-service-qti.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2audio@1.0-service.rc \
+    vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.qspmhal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qspmhal-service.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
@@ -1077,6 +1078,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qesdk.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qesdk.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qesdksec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qesdksec.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qms.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qms.policy \
+    vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qspm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qspm.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qvr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qvr@2.0.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qwesd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qwesd@2.0.policy \
@@ -1103,7 +1105,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/firmware/gen71100_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gen71100_gmu.bin \
     vendor/xiaomi/peridot/proprietary/vendor/firmware/gen71100_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/gen71100_sqe.fw \
     vendor/xiaomi/peridot/proprietary/vendor/firmware/gmu_gen70900.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gmu_gen70900.bin \
-    vendor/xiaomi/peridot/proprietary/vendor/lib64/android.hardware.audio.common@7.1-util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.common@7.1-util.so \
     vendor/xiaomi/peridot/proprietary/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf
 
 PRODUCT_PACKAGES += \
@@ -1199,6 +1200,7 @@ PRODUCT_PACKAGES += \
     lib_bt_lhdc \
     lib_misound_asc \
     libadm \
+    libadreno_app_profiles \
     libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
@@ -1488,6 +1490,7 @@ PRODUCT_PACKAGES += \
     libqsh \
     libqshcamera \
     libqsocket \
+    libqspm-mem-utils-vendor \
     libqti-qesdk-secure \
     libqtigefar \
     libqtikeymaster4 \
@@ -1823,6 +1826,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.qesdhalaidl-V2-ndk \
     vendor.qti.qesdsys-V3-ndk \
     vendor.qti.qesdsys-V4-ndk \
+    vendor.qti.qspmhal-V1-ndk \
+    vendor.qti.qspmhal-impl \
+    vendor.qti.qspmhal@1.0 \
     vendor.qti.voiceprint@1.0 \
     vendor.xiaomi.hardware.aidl.mtdservice-V1-ndk_platform \
     vendor.xiaomi.hardware.aon-V1-ndk \
@@ -2431,6 +2437,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.wifidisplaysession-service.xml \
     vendor.qti.ims.factoryaidlservice.xml \
     vendor.qti.qccvndhal_aidl-service.xml \
+    vendor.qti.qspmhal-service.xml \
     vendor.xiaomi.hardware.displayfeature_aidl-service.xml \
     vendor.xiaomi.hardware.quickcamera.xml \
     vendor.qti.qesdsys.service.xml \
@@ -2537,6 +2544,7 @@ PRODUCT_PACKAGES += \
     vendor.dpmd \
     vendor.qti.diag \
     vendor.qti.hardware.soter-provision \
+    vendor.qti.qspmhal-service \
     vendor_modprobe \
     vppservice \
     wfdhdcphalservice \

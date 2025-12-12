@@ -9,6 +9,9 @@ soong_namespace {
         "hardware/qcom-caf/sm8650",
         "hardware/qcom-caf/wlan",
         "hardware/qcom-caf/common/libqti-perfd-client",
+        "hardware/lineage/interfaces/power-libperfmgr",
+        "hardware/google/interfaces",
+        "hardware/google/pixel",
         "hardware/xiaomi",
         "vendor/qcom/opensource/commonsys/display",
         "vendor/qcom/opensource/commonsys-intf/display",
@@ -2877,6 +2880,39 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libadreno_app_profiles",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libadreno_app_profiles.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libhardware",
+                "libutils",
+                "libbase",
+                "libbinder_ndk",
+                "vendor.qti.qspmhal-V1-ndk",
+                "libqspm-mem-utils-vendor",
+                "libdl",
+                "libz",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
             ],
         },
     },
@@ -11606,6 +11642,32 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libqsocket.so",
             ],
             shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqspm-mem-utils-vendor",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqspm-mem-utils-vendor.so",
+            ],
+            shared_libs: [
+                "vendor.qti.qspmhal-V1-ndk",
+                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -21234,6 +21296,92 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.qspmhal-V1-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.qspmhal-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.common-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.qspmhal-impl",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.qspmhal-impl.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "vendor.qti.qspmhal-V1-ndk",
+                "libqspm-mem-utils-vendor",
+                "liblog",
+                "libcutils",
+                "libbinder",
+                "libbase",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.qspmhal@1.0",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.qspmhal@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -37642,7 +37790,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libwrapper_dlengine.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libSNPE",
                 "libmialgo_utils",
                 "libc++_shared",
@@ -39293,6 +39440,15 @@ prebuilt_etc_xml {
     name: "vendor.qti.qccvndhal_aidl-service.xml",
     owner: "xiaomi",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.qccvndhal_aidl-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.qti.qspmhal-service.xml",
+    owner: "xiaomi",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.qspmhal-service.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -42327,6 +42483,37 @@ cc_prebuilt_binary {
                 "libhardware",
                 "libhidlbase",
                 "vendor.qti.hardware.soter-V1-ndk",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.qti.qspmhal-service",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/vendor.qti.qspmhal-service",
+            ],
+            shared_libs: [
+                "vendor.qti.qspmhal-V1-ndk",
+                "vendor.qti.qspmhal-impl",
+                "liblog",
+                "libutils",
+                "libavservices_minijail",
+                "libbase",
                 "libbinder_ndk",
                 "libc++",
                 "libc",
