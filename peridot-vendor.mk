@@ -1396,6 +1396,7 @@ PRODUCT_PACKAGES += \
     libqsh \
     libqshcamera \
     libqsocket \
+    libqspm-mem-utils-vendor \
     libqti-qesdk-secure \
     libqtigefar \
     libqtikeymaster4 \
@@ -1732,6 +1733,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.qesdhalaidl-V2-ndk \
     vendor.qti.qesdsys-V3-ndk \
     vendor.qti.qesdsys-V4-ndk \
+    vendor.qti.qspmhal-V1-ndk \
+    vendor.qti.qspmhal-impl \
+    vendor.qti.qspmhal@1.0 \
     vendor.qti.voiceprint@1.0 \
     vendor.xiaomi.hardware.aidl.mtdservice-V1-ndk_platform \
     vendor.xiaomi.hardware.aon-V1-ndk \
