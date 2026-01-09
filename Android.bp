@@ -4947,7 +4947,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libbinder",
                 "libdrm",
-                "libtinyxml2_bp4a",
+                "libtinyxml2-v34",
                 "libdisplaydebug",
                 "libhidlbase",
                 "android.frameworks.sensorservice@1.0",
@@ -12786,7 +12786,7 @@ cc_prebuilt_library_shared {
                 "libdisplaydebug",
                 "libsdm-color",
                 "libbinder",
-                "libtinyxml2_bp4a",
+                "libtinyxml2-v34",
                 "libsdmutils",
                 "libdrm",
                 "libdigital-dimming",
@@ -13635,31 +13635,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libtinyxml2_1.so",
             ],
             shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libtinyxml2_bp4a",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libtinyxml2_bp4a.so",
-            ],
-            shared_libs: [
-                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -38491,6 +38466,30 @@ android_app_import {
 }
 
 android_app_import {
+    name: "HotwordEnrollmentXGoogleHEXAGON_WIDEBAND",
+    owner: "xiaomi",
+    apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
+
+android_app_import {
+    name: "HotwordEnrollmentYGoogleHEXAGON_WIDEBAND",
+    owner: "xiaomi",
+    apk: "proprietary/product/priv-app/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
+
+android_app_import {
     name: "AtFwd2",
     owner: "xiaomi",
     apk: "proprietary/system_ext/app/AtFwd2/AtFwd2.apk",
@@ -38641,6 +38640,15 @@ dex_import {
         "proprietary/product/framework/uimservicelibrary.jar",
     ],
     product_specific: true,
+}
+
+dex_import {
+    name: "com.android.hotwordenrollment.common.util",
+    owner: "xiaomi",
+    jars: [
+        "proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar",
+    ],
+    system_ext_specific: true,
 }
 
 dex_import {
