@@ -566,6 +566,54 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/odm/etc/sensors/config/sns_tilt_sw_enabled.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_tilt_sw_enabled.json \
     vendor/xiaomi/peridot/proprietary/odm/etc/sensors/config/sns_tilt_to_wake.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_tilt_to_wake.json \
     vendor/xiaomi/peridot/proprietary/odm/etc/surfaceflinger/dolby_vision.cfg:$(TARGET_COPY_OUT_ODM)/etc/surfaceflinger/dolby_vision.cfg \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-4k.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-4k.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-arvr.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-arvr.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-boost.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-boost.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-camera.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-camera.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-cclassvideo.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-cclassvideo.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-cgame.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-cgame.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-chg-only.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-chg-only.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-class0.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-class0.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-highfps.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-highfps.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-hp-mgame.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-hp-mgame.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-hp-normal.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-hp-normal.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-huanji.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-huanji.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-india-4k.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-india-4k.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-india-arvr.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-india-arvr.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-india-camera.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-india-camera.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-india-cclassvideo.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-india-cclassvideo.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-india-cgame.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-india-cgame.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-india-class0.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-india-class0.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-india-highfps.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-india-highfps.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-india-hp-mgame.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-india-hp-mgame.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-india-hp-normal.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-india-hp-normal.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-india-huanji.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-india-huanji.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-india-mgame.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-india-mgame.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-india-navigation.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-india-navigation.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-india-nolimits.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-india-nolimits.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-india-normal.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-india-normal.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-india-per-class0.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-india-per-class0.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-india-per-normal.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-india-per-normal.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-india-per-video.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-india-per-video.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-india-phone.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-india-phone.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-india-tgame.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-india-tgame.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-india-video.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-india-video.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-india-videochat.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-india-videochat.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-india-yuanshen.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-india-yuanshen.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-map-india.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-map-india.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-mgame.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-mgame.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-navigation.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-navigation.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-nolimits.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-nolimits.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-normal.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-normal.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-per-class0.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-per-class0.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-per-normal.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-per-normal.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-per-video.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-per-video.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-phone.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-phone.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-region-map.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-region-map.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-tgame.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-tgame.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-video.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-video.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-videochat.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-videochat.conf \
+    vendor/xiaomi/peridot/proprietary/odm/etc/thermal-yuanshen.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-yuanshen.conf \
     vendor/xiaomi/peridot/proprietary/odm/etc/usecaseKvManager.xml:$(TARGET_COPY_OUT_ODM)/etc/usecaseKvManager.xml \
     vendor/xiaomi/peridot/proprietary/odm/firmware/CAMERA_ICP.b00:$(TARGET_COPY_OUT_ODM)/firmware/CAMERA_ICP.b00 \
     vendor/xiaomi/peridot/proprietary/odm/firmware/CAMERA_ICP.b01:$(TARGET_COPY_OUT_ODM)/firmware/CAMERA_ICP.b01 \
@@ -786,7 +834,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/product/etc/permissions/UimGbaManager.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGbaManager.xml \
     vendor/xiaomi/peridot/proprietary/product/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
     vendor/xiaomi/peridot/proprietary/product/etc/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml \
-    vendor/xiaomi/peridot/proprietary/system/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/system/etc/sysconfig/qti_whitelist.xml \
+    vendor/xiaomi/peridot/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/xiaomi/peridot/proprietary/system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc \
     vendor/xiaomi/peridot/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
     vendor/xiaomi/peridot/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
@@ -1039,6 +1087,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/xiaomi/peridot/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/xiaomi/peridot/proprietary/vendor/etc/telephony_packages.xml:$(TARGET_COPY_OUT_VENDOR)/etc/telephony_packages.xml \
+    vendor/xiaomi/peridot/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
+    vendor/xiaomi/peridot/proprietary/vendor/etc/thermal-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-map.conf \
+    vendor/xiaomi/peridot/proprietary/vendor/etc/thermald-devices.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald-devices.conf \
     vendor/xiaomi/peridot/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
     vendor/xiaomi/peridot/proprietary/vendor/etc/xiaomi_ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/xiaomi_ecc_list.xml \
     vendor/xiaomi/peridot/proprietary/vendor/etc/xiaomi_ecc_list_preference.xml:$(TARGET_COPY_OUT_VENDOR)/etc/xiaomi_ecc_list_preference.xml \
@@ -1601,9 +1652,6 @@ PRODUCT_PACKAGES += \
     libasphere \
     libdlbvol \
     libhwdap \
-    libqcbassboost \
-    libqcreverb \
-    libqcvirt \
     libquasar \
     libshoebox \
     libspatializer \
@@ -1778,18 +1826,18 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.seccam-V1-ndk \
     vendor.xiaomi.sensor.camera-V1-ndk \
     vendor.xiaomi.sensor.citsensorservice-V1-ndk \
-    chre_qsh_shim \
-    libDspIOProxy_skel \
-    libSnpeHtpV73Skel \
-    libdsp_streamer_qvrcam_receiver \
-    libeye_tracking_dsp_sample_skel \
-    libhalide_hexagon_remote_skel \
-    libqvr_3dof_tracker_skel \
-    libqvr_cam_dsp_driver_skel \
-    libqvr_dsp_driver_skel \
-    libtracker_6dof_skel_8450 \
-    nearby.napp_header \
-    nearby \
+    vendor_lib_rfsa_adsp_chre_qsh_shim_so \
+    vendor_lib_rfsa_adsp_libDspIOProxy_skel_so \
+    vendor_lib_rfsa_adsp_libSnpeHtpV73Skel_so \
+    vendor_lib_rfsa_adsp_libdsp_streamer_qvrcam_receiver_so \
+    vendor_lib_rfsa_adsp_libeye_tracking_dsp_sample_skel_so \
+    vendor_lib_rfsa_adsp_libhalide_hexagon_remote_skel_so \
+    vendor_lib_rfsa_adsp_libqvr_3dof_tracker_skel_so \
+    vendor_lib_rfsa_adsp_libqvr_cam_dsp_driver_skel_so \
+    vendor_lib_rfsa_adsp_libqvr_dsp_driver_skel_so \
+    vendor_lib_rfsa_adsp_libtracker_6dof_skel_8450_so \
+    vendor_lib_rfsa_adsp_nearby_napp_header \
+    vendor_lib_rfsa_adsp_nearby_so \
     lib-imsvideocodec \
     lib-imsvt \
     lib-imsvtextutils \
@@ -2257,32 +2305,32 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.aidlbgservice-V1-ndk_platform \
     vendor.xiaomi.hardware.bgservice@1.0-impl \
     vendor.xiaomi.hardware.bgservice@1.0 \
-    capi_elus_rx \
-    capi_elus_tx \
-    libCalculator_skel \
-    libQnnHtpV73 \
-    libQnnHtpV73QemuDriver \
-    libQnnHtpV73Skel \
-    libQnnHtpV75 \
-    libQnnHtpV75Skel \
-    libQnnSaver_adsp \
-    libQnnSystem_adsp \
-    libSnpeHtpV75Skel \
-    libadsp_jpege_skel \
-    libarc_htp_driver_skel \
-    libarcsoft_beauty_hvx_skel \
-    libbitml_nsp_skel \
-    libdsp_streamer_binning \
-    libhme_dsp_skel \
-    libmctfengine_skel \
-    libmialgo_ai_process_cdsp_skel \
-    libmialgo_basic_cdsp_skel \
-    libmialgo_bokeh_depth_cdsp_skel \
-    libmialgo_bokeh_effect_cdsp_skel \
-    libmialgo_ell_cdsp_skel \
-    libmialgo_mc_bokeh_cdsp_skel \
-    libmialgo_rfs_cdsp_skel \
-    libmlawbpostproc_dsp_skel \
+    odm_lib_rfsa_adsp_capi_elus_rx_so \
+    odm_lib_rfsa_adsp_capi_elus_tx_so \
+    odm_lib_rfsa_adsp_libCalculator_skel_so \
+    odm_lib_rfsa_adsp_libQnnHtpV73_so \
+    odm_lib_rfsa_adsp_libQnnHtpV73QemuDriver_so \
+    odm_lib_rfsa_adsp_libQnnHtpV73Skel_so \
+    odm_lib_rfsa_adsp_libQnnHtpV75_so \
+    odm_lib_rfsa_adsp_libQnnHtpV75Skel_so \
+    odm_lib_rfsa_adsp_libQnnSaver_so \
+    odm_lib_rfsa_adsp_libQnnSystem_so \
+    odm_lib_rfsa_adsp_libSnpeHtpV75Skel_so \
+    odm_lib_rfsa_adsp_libadsp_jpege_skel_so \
+    odm_lib_rfsa_adsp_libarc_htp_driver_skel_so \
+    odm_lib_rfsa_adsp_libarcsoft_beauty_hvx_skel_so \
+    odm_lib_rfsa_adsp_libbitml_nsp_skel_so \
+    odm_lib_rfsa_adsp_libdsp_streamer_binning_so \
+    odm_lib_rfsa_adsp_libhme_dsp_skel_so \
+    odm_lib_rfsa_adsp_libmctfengine_skel_so \
+    odm_lib_rfsa_adsp_libmialgo_ai_process_cdsp_skel_so \
+    odm_lib_rfsa_adsp_libmialgo_basic_cdsp_skel_so \
+    odm_lib_rfsa_adsp_libmialgo_bokeh_depth_cdsp_skel_so \
+    odm_lib_rfsa_adsp_libmialgo_bokeh_effect_cdsp_skel_so \
+    odm_lib_rfsa_adsp_libmialgo_ell_cdsp_skel_so \
+    odm_lib_rfsa_adsp_libmialgo_mc_bokeh_cdsp_skel_so \
+    odm_lib_rfsa_adsp_libmialgo_rfs_cdsp_skel_so \
+    odm_lib_rfsa_adsp_libmlawbpostproc_dsp_skel_so \
     com.google.android.widevine.nonupdatable \
     CACertService \
     CneApp \
