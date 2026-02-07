@@ -1428,6 +1428,9 @@ PRODUCT_PACKAGES += \
     libworker_pool \
     sensors.qsh \
     libasphere \
+    libqcbassboost \
+    libqcreverb \
+    libqcvirt \
     libquasar \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
