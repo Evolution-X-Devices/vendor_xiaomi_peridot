@@ -1643,6 +1643,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qccvndhal@1.0 \
     vendor.qti.hardware.wifidisplaysession@1.0 \
     vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk \
+    vendor.qti.ims.datachannelservice-V1-ndk \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
     vendor.qti.qccsyshal_aidl-V1-ndk \
@@ -2105,7 +2106,6 @@ PRODUCT_PACKAGES += \
     QCC \
     QesdkSysService \
     QtiTelephonyService \
-    QtiTelephony \
     WfdService \
     ims \
     qcrilmsgtunnel \
@@ -2117,6 +2117,7 @@ PRODUCT_PACKAGES += \
     qcrilhook \
     vendor.qti.ims.connection-V1.0-java \
     vendor.qti.ims.connectionaidlservice-V1-java \
+    vendor.qti.ims.datachannelservice-V1-java \
     vendor.qti.ims.factory-V2.0-java \
     vendor.qti.ims.factory-V2.1-java \
     vendor.qti.ims.factory-V2.2-java \
