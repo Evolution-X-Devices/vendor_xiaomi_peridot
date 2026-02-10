@@ -2104,6 +2104,7 @@ PRODUCT_PACKAGES += \
     uimgbaservice \
     AtFwd2 \
     ImsRcsService \
+    PowerOffAlarm \
     QCC \
     QesdkSysService \
     QtiTelephonyService \
@@ -2116,6 +2117,7 @@ PRODUCT_PACKAGES += \
     uimgbamanagerlibrary \
     uimservicelibrary \
     qcrilhook \
+    vendor.qti.hardware.alarm-V1.0-java \
     vendor.qti.ims.connection-V1.0-java \
     vendor.qti.ims.connectionaidlservice-V1-java \
     vendor.qti.ims.datachannelservice-V1-java \
