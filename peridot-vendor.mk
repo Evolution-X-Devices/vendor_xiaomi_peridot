@@ -1003,7 +1003,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf
 
 PRODUCT_PACKAGES += \
+    libcamera_algoup_jni.xiaomi \
+    libcamera_mianode_jni.xiaomi \
+    libgui-xiaomi \
+    libmicampostproc_client \
     vendor.qti.diaghal-V1-ndk \
+    vendor.xiaomi.hardware.campostproc@1.0_system \
     btaudio_offload_if \
     com.qualcomm.qti.dpm.api@1.0 \
     com.qualcomm.qti.imscmservice@1.0 \
@@ -2205,6 +2210,7 @@ PRODUCT_PACKAGES += \
     odm_lib_rfsa_adsp_libmialgo_rfs_cdsp_skel_so \
     odm_lib_rfsa_adsp_libmlawbpostproc_dsp_skel_so \
     com.google.android.widevine.nonupdatable \
+    MiuiCamera \
     CneApp \
     IWlanService \
     TimeService \
@@ -2219,11 +2225,11 @@ PRODUCT_PACKAGES += \
     ims \
     qcrilmsgtunnel \
     WfdCommon \
+    camerax-vendor-extensions \
     androidx.camera.extensions.impl \
     uimgbalibrary \
     uimgbamanagerlibrary \
     uimservicelibrary \
-    camerax-vendor-extensions \
     com.android.hotwordenrollment.common.util \
     qcrilhook \
     vendor.qti.ims.connection-V1.0-java \
@@ -2417,4 +2423,5 @@ PRODUCT_PACKAGES += \
     vendor_lib64_soundfx_libmisoundfx_so
 
 PRODUCT_BOOT_JARS += \
-    WfdCommon
+    WfdCommon \
+    camerax-vendor-extensions
